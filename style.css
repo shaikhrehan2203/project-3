@@ -1,0 +1,125 @@
+
+body{
+    background: rgb(40,58,156);
+background: linear-gradient(180deg, rgba(40,58,156,1) 0%, rgba(0,0,0,1) 0%, rgba(26,41,68,1) 53%);
+}
+.box-2 h2{
+    color: rgba(255, 255, 255, 0.459);
+}
+.box-2:hover h2{
+
+    color:white ;
+    transition: .5s;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+  .transform{
+    animation-name: transform;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes transform{
+    0%,100%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(50px);
+    }
+  }
+
+  .transform-2{
+    animation-name: transform-2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes transform-2{
+    0%,100%{
+      transform: translateX(0);
+    }
+    50%{
+      transform: translateX(50px);
+    }
+  }
+
+
+.third-card:hover .t-img {
+    animation-name: flip;
+    animation-duration: .7s;
+    animation-iteration-count: 1;
+
+
+
+  }
+
+.button-div:hover button {
+
+  color: #6610f2;
+  transition: .5s ease-in-out;
+  
+
+}
+
+.button-div button {
+  color: white;
+}
+
+.button-div-3:hover button {
+
+background-color: #6610f2;
+transition: .5s ease-in-out;
+
+}
+
+.button-div-3 button {
+
+  background-color: rgba(255, 255, 255, 0.201);
+
+}
+
+.card {
+  overflow: hidden;
+  transition: .5s linear;
+ 
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: .3s linear;
+}
+
+.parent:hover .card:not(:hover){
+  filter: blur(2px);
+  transform: scale(.9);
+}
+
+.card:hover .div-ki-aatma {
+  transition: .5s;
+}
+
+.card:hover .div-ki-aatma {
+  transform: translateX(0);
+  top: 0px;
+}
+
+.top-div-1:hover p{
+
+  color: #6610f2;
+  transition: .5s ease-in-out;
+
+
+}
+
+.top-div-1 p{
+
+  
+  color: white;
+  transition:  .5s;
+
+
+}
